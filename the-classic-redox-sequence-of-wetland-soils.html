@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BAE 204: Introduction to Environmental and Ecological Engineering</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="BAE 204: Introduction to Environmental and Ecological Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="BAE 204: Introduction to Environmental and Ecological Engineering" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="François Birgand">
+
+
+<meta name="date" content="2018-02-15">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="aerobic-and-anaerobic-respiration.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Textbook for BAE 204</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#author"><i class="fa fa-check"></i>Author</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="lifes-secrets-for-capturing-energy.html"><a href="lifes-secrets-for-capturing-energy.html"><i class="fa fa-check"></i><b>2</b> Life’s secrets for capturing energy</a><ul>
+<li class="chapter" data-level="2.1" data-path="lifes-secrets-for-capturing-energy.html"><a href="lifes-secrets-for-capturing-energy.html#the-five-fundamental-requirements-of-life"><i class="fa fa-check"></i><b>2.1</b> The five fundamental requirements of life</a></li>
+<li class="chapter" data-level="2.2" data-path="lifes-secrets-for-capturing-energy.html"><a href="lifes-secrets-for-capturing-energy.html#electron-allocation-onto-chonsp"><i class="fa fa-check"></i><b>2.2</b> Electron allocation onto CHONSP</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>3</b> Aerobic and anaerobic respiration</a><ul>
+<li class="chapter" data-level="3.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>3.1</b> Generating energy: transfer of electrons</a></li>
+<li class="chapter" data-level="3.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-without-combustion"><i class="fa fa-check"></i><b>3.2</b> Generating energy without combustion</a></li>
+<li class="chapter" data-level="3.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#atp-or-the-energy-currency-of-the-cell"><i class="fa fa-check"></i><b>3.3</b> ATP or the energy currency of the cell</a></li>
+<li class="chapter" data-level="3.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture"><i class="fa fa-check"></i><b>3.4</b> The ATP manufacture</a></li>
+<li class="chapter" data-level="3.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow"><i class="fa fa-check"></i><b>3.5</b> Creating a proton gradient as a source of proton flow</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons"><i class="fa fa-check"></i><b>3.5.1</b> A compartment to accumulate protons</a></li>
+<li class="chapter" data-level="3.5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-supply-of-protons-for-the-intermembrane-space-proton-pumps"><i class="fa fa-check"></i><b>3.5.2</b> A supply of protons for the intermembrane space: proton pumps</a></li>
+<li class="chapter" data-level="3.5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps"><i class="fa fa-check"></i><b>3.5.3</b> Electron transfer molecules that power the proton pumps</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><i class="fa fa-check"></i><b>3.6</b> Transfer of electrons from the Organic Carbon to an electron acceptor</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxygen-reduction"><i class="fa fa-check"></i><b>3.6.1</b> Oxygen reduction</a></li>
+<li class="chapter" data-level="3.6.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-fate-from-organic-matter-to-electron-transfer-molecules"><i class="fa fa-check"></i><b>3.6.2</b> Electron fate from organic matter to electron transfer molecules</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration"><i class="fa fa-check"></i><b>3.7</b> Summary of respiration</a></li>
+<li class="chapter" data-level="3.8" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes"><i class="fa fa-check"></i><b>3.8</b> Respiration electron flow schemes</a><ul>
+<li class="chapter" data-level="3.8.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#linkages-between-respiration-and-microbial-processes"><i class="fa fa-check"></i><b>3.8.1</b> Linkages between respiration and microbial processes</a></li>
+<li class="chapter" data-level="3.8.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-schemes"><i class="fa fa-check"></i><b>3.8.2</b> Respiration schemes</a></li>
+<li class="chapter" data-level="3.8.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#aerobic-respiration-schemes-for-organotrophs"><i class="fa fa-check"></i><b>3.8.3</b> Aerobic respiration schemes for organotrophs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-classic-redox-sequence-of-wetland-soils.html"><a href="the-classic-redox-sequence-of-wetland-soils.html"><i class="fa fa-check"></i><b>4</b> The classic redox sequence of wetland soils</a><ul>
+<li class="chapter" data-level="4.1" data-path="the-classic-redox-sequence-of-wetland-soils.html"><a href="the-classic-redox-sequence-of-wetland-soils.html#the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils"><i class="fa fa-check"></i><b>4.1</b> The theoretical vertical sequence of respiratory processes in wetland soils</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="the-classic-redox-sequence-of-wetland-soils.html"><a href="the-classic-redox-sequence-of-wetland-soils.html#an-aerobic-layer-near-the-soil-water-interface"><i class="fa fa-check"></i><b>4.1.1</b> An aerobic layer near the soil-water interface</a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-classic-redox-sequence-of-wetland-soils.html"><a href="the-classic-redox-sequence-of-wetland-soils.html#respiration-in-the-anaerobic-zone-of-the-soil"><i class="fa fa-check"></i><b>4.1.2</b> Respiration in the anaerobic zone of the soil</a></li>
+<li class="chapter" data-level="4.1.3" data-path="the-classic-redox-sequence-of-wetland-soils.html"><a href="the-classic-redox-sequence-of-wetland-soils.html#a-denitrification-layer-below-the-aerobic-layer"><i class="fa fa-check"></i><b>4.1.3</b> A <em>denitrification</em> layer below the aerobic layer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>5</b> Glossary</a><ul>
+<li class="chapter" data-level="5.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>5.1</b> A</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="glossary.html"><a href="glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>5.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="5.1.2" data-path="glossary.html"><a href="glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>5.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="5.1.3" data-path="glossary.html"><a href="glossary.html#ammonia"><i class="fa fa-check"></i><b>5.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="5.1.4" data-path="glossary.html"><a href="glossary.html#ammonium"><i class="fa fa-check"></i><b>5.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="5.1.5" data-path="glossary.html"><a href="glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>5.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="5.1.6" data-path="glossary.html"><a href="glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>5.1.6</b> Anoxic waters</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="glossary.html"><a href="glossary.html#c"><i class="fa fa-check"></i><b>5.2</b> C</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="glossary.html"><a href="glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>5.2.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="5.2.2" data-path="glossary.html"><a href="glossary.html#carbonates"><i class="fa fa-check"></i><b>5.2.2</b> Carbonates</a></li>
+<li class="chapter" data-level="5.2.3" data-path="glossary.html"><a href="glossary.html#catabolism"><i class="fa fa-check"></i><b>5.2.3</b> Catabolism</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="glossary.html"><a href="glossary.html#d"><i class="fa fa-check"></i><b>5.3</b> D</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="glossary.html"><a href="glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>5.3.1</b> Dihydrogen sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="glossary.html"><a href="glossary.html#e"><i class="fa fa-check"></i><b>5.4</b> E</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="glossary.html"><a href="glossary.html#eutrophication"><i class="fa fa-check"></i><b>5.4.1</b> Eutrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="glossary.html"><a href="glossary.html#g"><i class="fa fa-check"></i><b>5.5</b> G</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="glossary.html"><a href="glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>5.5.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="glossary.html"><a href="glossary.html#h"><i class="fa fa-check"></i><b>5.6</b> H</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="glossary.html"><a href="glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>5.6.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="5.6.2" data-path="glossary.html"><a href="glossary.html#hydrogen-sulfide"><i class="fa fa-check"></i><b>5.6.2</b> Hydrogen Sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="glossary.html"><a href="glossary.html#l"><i class="fa fa-check"></i><b>5.7</b> L</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="glossary.html"><a href="glossary.html#lithotrophs"><i class="fa fa-check"></i><b>5.7.1</b> Lithotrophs</a></li>
+<li class="chapter" data-level="5.7.2" data-path="glossary.html"><a href="glossary.html#limiting-factor"><i class="fa fa-check"></i><b>5.7.2</b> Limiting factor</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="glossary.html"><a href="glossary.html#m"><i class="fa fa-check"></i><b>5.8</b> M</a><ul>
+<li class="chapter" data-level="5.8.1" data-path="glossary.html"><a href="glossary.html#methane"><i class="fa fa-check"></i><b>5.8.1</b> Methane</a></li>
+<li class="chapter" data-level="5.8.2" data-path="glossary.html"><a href="glossary.html#mineralization"><i class="fa fa-check"></i><b>5.8.2</b> Mineralization</a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="glossary.html"><a href="glossary.html#n"><i class="fa fa-check"></i><b>5.9</b> N</a><ul>
+<li class="chapter" data-level="5.9.1" data-path="glossary.html"><a href="glossary.html#nitrate"><i class="fa fa-check"></i><b>5.9.1</b> Nitrate</a></li>
+<li class="chapter" data-level="5.9.2" data-path="glossary.html"><a href="glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>5.9.2</b> Nitrous Oxide</a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="glossary.html"><a href="glossary.html#o"><i class="fa fa-check"></i><b>5.10</b> O</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="glossary.html"><a href="glossary.html#oligotrophication"><i class="fa fa-check"></i><b>5.10.1</b> Oligotrophication</a></li>
+<li class="chapter" data-level="5.10.2" data-path="glossary.html"><a href="glossary.html#oxidation"><i class="fa fa-check"></i><b>5.10.2</b> Oxidation</a></li>
+<li class="chapter" data-level="5.10.3" data-path="glossary.html"><a href="glossary.html#oxidation-state"><i class="fa fa-check"></i><b>5.10.3</b> Oxidation state</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="glossary.html"><a href="glossary.html#p"><i class="fa fa-check"></i><b>5.11</b> P</a><ul>
+<li class="chapter" data-level="5.11.1" data-path="glossary.html"><a href="glossary.html#phosphate"><i class="fa fa-check"></i><b>5.11.1</b> Phosphate</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="glossary.html"><a href="glossary.html#r"><i class="fa fa-check"></i><b>5.12</b> R</a><ul>
+<li class="chapter" data-level="5.12.1" data-path="glossary.html"><a href="glossary.html#reduction"><i class="fa fa-check"></i><b>5.12.1</b> Reduction</a></li>
+</ul></li>
+<li class="chapter" data-level="5.13" data-path="glossary.html"><a href="glossary.html#s"><i class="fa fa-check"></i><b>5.13</b> S</a><ul>
+<li class="chapter" data-level="5.13.1" data-path="glossary.html"><a href="glossary.html#sulfate"><i class="fa fa-check"></i><b>5.13.1</b> Sulfate</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BAE 204: Introduction to Environmental and Ecological Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-classic-redox-sequence-of-wetland-soils" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> The classic redox sequence of wetland soils</h1>
+<p>In the previous chapter, we introduced quite a few details on the molecular functioning of respiratory processes. We took aerobic respiration as our model to determine that most of the ATP produced in the cell is principally due to a proton flow from the inter-membrane space to the cytoplasm, for microbial cells and within the mitochondria for eukaryotic cells (Figure <a href="aerobic-and-anaerobic-respiration.html#fig:respirationglobal">3.10</a>). The respiration schemes provide a very handy method to summarize the important drivers and consequences of respiration: the electron donors, the electron acceptors, and the byproducts of both oxidation and reduction. In this chapter we will use the same respiration schemes to explore the processes at play in wetland soils and the consequences on concentration gradients and movement of molecules of importance in environmental and ecological engineering.</p>
+<div id="the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils" class="section level2">
+<h2><span class="header-section-number">4.1</span> The theoretical vertical sequence of respiratory processes in wetland soils</h2>
+<p>The theoretical wetland soil used to illustrate our point has ‘enough’ organic matter content for microbial respiration to take place throughout its profile, ‘enough’ of other sand, silt, and clay and all the minerals that accompany them, including iron and manganese oxides. Let us assume that this theoretical soil, is sufficiently moist and aerated for microbial aerobic respiration to take place throughout the soil profile. Let us then assume that this soil is suddenly flooded, and let us explore the consequences of this.</p>
+<div id="an-aerobic-layer-near-the-soil-water-interface" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> An aerobic layer near the soil-water interface</h3>
+<p>At first, all micro-organisms are going to use all the oxygen that might be present in the pore space. But because pore space is now getting filled with water, it is possible that the amount of oxygen available for microorganisms might change. And yes, indeed, water does not have nearly the capacity to provide oxygen as air does for several reasons:</p>
+<ul>
+<li>at 15°C in water there are about 10 mg of O<sub>2</sub> in one liter of water. Comparatively, in one liter of air, there is about 300 mg of O<sub>2</sub>, or <strong>30 times</strong> more. How does one calculate this? At standard conditions, 1 liter of air at 21% oxygen possesses 0.21 L of oxygen. Since for these conditions, 1 mole of gas occupies 22.4 L, simply divide 0.21/22.4, to arrive at 0.0094 moles of oxygen. Then the mass of oxygen in 1 liter of air is 0.0094×32 g/mole = 300 mg.</li>
+<li>the diffusivity (which quantifies the ability of elements to move about) of O<sub>2</sub> in air is 0.176 cm²/s while that of O<sub>2</sub> in water is 2.10×10<sup>−5</sup> cm²/s, or more than <strong>8,000 times smaller</strong> <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2017-id">2017</a>)</span></li>
+</ul>
+<p>In other words, it is good to remember that <strong>the amount of oxygen available in water compared to air is about 30 less, and that oxygen in water moves almost 10,000 slower than in water</strong>.</p>
+<p>So, one can clearly see that the potential supply of oxygen from flooded porewater is thus a lot more limited than in aerated pore space. Now, where is the potential source for supply of oxygen for our recently flooded soil? The answer is the atmosphere. For a real flooded wetland soil, another source of O<sub>2</sub> might be photosynthesis from algae and aquatic vegetation during the day. But in all cases, most of the oxygen needed for microbial aerobic respiration of our new flooded soil will have to travel the distance corresponding to the thickness of the water column, and, the linear distance within the porous medium of the soil, which can be quite <em>tortuous</em>. This property of the soil/sediment has been factored in by researchers and been called <em>tortuosity</em>.</p>
+<p><strong>In summary</strong>, the supply of oxygen to bacteria in a flooded soil is limited because of four factors:</p>
+<ol style="list-style-type: decimal">
+<li>there is about 30 times less O<sub>2</sub> in water than there is in the same volume of air</li>
+<li>the O<sub>2</sub> diffusive transport capacity in water is about 10,000 times smaller than that in air</li>
+<li>O<sub>2</sub> has to travel from the atmosphere to the soil through the thickness of the water column, and</li>
+<li>travel through the tortuous path of the soil porous medium</li>
+</ol>
+<p>Not surprisingly, this supply is just too limited compared to the demand. As a result, most of our recently flooded soil bacteria consumes all the O<sub>2</sub> and the only part of the sediment that might have a little bit of oxygen is the area at the soil-water interface. This is what it illustrated in Figure <a href="the-classic-redox-sequence-of-wetland-soils.html#fig:aerobic-layer-wetland-soil">4.1</a> below.</p>
+<div class="figure" style="text-align: center"><span id="fig:aerobic-layer-wetland-soil"></span>
+<iframe src="https://www.youtube.com/embed/hPbAfLlNuo8" width="95%" height="400px">
+</iframe>
+<p class="caption">
+Figure 4.1: Animation summarizing the formation of aerobic and anaerobic zones of a theoretical flooded wetland soil due to the imbalance between bacterial respiratory oxygen demand and oxygen supply through the water column
+</p>
+</div>
+<p>Because the O<sub>2</sub> demand exceeds the O<sub>2</sub> supply from the atmosphere and the water column, an O<sub>2</sub> concentration gradient forms from the soil-water interface down. This concentration gradient, in turn, drives a downward movement of oxygen from the water column into the sediment down to the depth where there is no more concentration gradient. This depth defines the beginning of the anaerobic zone of the sediment, and above, the aerobic layer of the sediment.</p>
+</div>
+<div id="respiration-in-the-anaerobic-zone-of-the-soil" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Respiration in the anaerobic zone of the soil</h3>
+<p>What happens to all the microbes in the anaerobic zone of the sediment? Certainly the exclusively aerobic microbes just do not survive, but most bacteria are facultative aerobs. In other words, they can switch from aerobic to anaerobic respiration. Let us state this again: in the anaerobic zone of the sediment, only <strong>unicellular microorganisms are able to survive</strong> and have had to adapt their respiration to still be able to produce ATP for their metabolism, but using electron acceptors <em>other than O<sub>2</sub></em>.</p>
+<p>It turns out that thermodynamics dictate that not all electron acceptors can generate the same amount of energy when they strip electrons from their electron donors. As a result, one can classify electron acceptors in decreasing order from the most to the least oxidizing, and the list of preferred electron acceptors goes as such:</p>
+<ul>
+<li>nitrate or NO<sub>3</sub><sup>-</sup></li>
+<li>Manganese oxide (MnO<sub>2</sub>) or Mn IV</li>
+<li>Iron oxides/hydroxyde or Fe III</li>
+<li>sulfate or SO<sub>4</sub><sup>2-</sup></li>
+<li>Carbon dioxide or CO<sub>2</sub></li>
+</ul>
+<p>Although very different microbes are involved at the different stages, the apparent <em>demand</em> for electron acceptor, in our theoretical wetland soil, can be described as a <em>temporal</em> sequence of events: oxygen is the preferred electron acceptor; when O<sub>2</sub> is all used, NO<sub>3</sub><sup>-</sup> will be used as the preferred electron acceptor; when all the NO<sub>3</sub><sup>-</sup> is used, the next most powerful electron acceptor is MnO<sub>2</sub> (also referred to Mn IV; IV corresponds to its <a href="glossary.html#oxidation-state">oxidation state</a>), which is present in a solid or mineral form in soils; when all the MnO<sub>2</sub> is used, then iron oxide or hydroxyde, which are also in the solid phase (also referred to Fe III, III corresponds to its <a href="glossary.html#oxidation-state">oxidation state</a>) will be used as the preferred electron acceptor; when all the Fe is used, then SO<sub>4</sub><sup>2-</sup> is used as the next preferred electron acceptor, and then when finally all the other electron acceptors have been all used, CO<sub>2</sub> can be the ultimate electron acceptor…!</p>
+<p>Finally, to this temporal sequence corresponds a theoretical <em>spatial</em> sequence or zones where each of the electron acceptor essentially defines a soil layer, with the layers are organized with depth from the most to the least oxidizing electron acceptor as represented in Figure <a href="the-classic-redox-sequence-of-wetland-soils.html#fig:wetland-soil-layers">4.2</a></p>
+<div class="figure" style="text-align: center"><span id="fig:wetland-soil-layers"></span>
+<img src="pictures/wetland-soil-layers.png" alt="Theoretical spatial layering of wetland soils corresponding to the electron acceptor available. In each layer, the oxidizing and the reduced forms are illustrated as oxidizing/reduced. *Not to scale*" width="55%" />
+<p class="caption">
+Figure 4.2: Theoretical spatial layering of wetland soils corresponding to the electron acceptor available. In each layer, the oxidizing and the reduced forms are illustrated as oxidizing/reduced. <em>Not to scale</em>
+</p>
+</div>
+<p>It is now time to present the respiration processes in each of the <em>redox</em> layer.</p>
+</div>
+<div id="a-denitrification-layer-below-the-aerobic-layer" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> A <em>denitrification</em> layer below the aerobic layer</h3>
+<p>The next most powerful or oxidizing electron acceptor after O<sub>2</sub> is NO<sub>3</sub><sup>-</sup>. We have seen in the previous chapters that the N atom in nitrate has zero electron for itself, hence its ability to accept electrons. Just like for aerobic respiration, nitrate reduction just does not happen on its own. Facultative anaerobic bacteria called <em>denitrifiers</em> take advantage of the electrons available on organic matter and of nitrate to accept them to generate their energy.</p>
+<p><em>This chapter is still under construction</em> <!--
+We will go over all of these later when we look at redox processes at the sediment water interface, but the first thing to which I want to point your attention is that, except for when CO~2~ is the electron acceptor:
+
+- organic matter is, for organotrophs, always the electron donors
+- as a result, the byproducts of catabolism or respiration when the organic carbons lose their electrons are always the same: CO~2~, NH~4~^+^, H~2~S/HS^-^, and PO~4~^3-^. This means that at one point, all of these four (five if one counts both H~2~S and HS^-^, their exact proportion depends on pH, see [details in the glossary](#hydrogen-sulfide)) molecules will accumulate where they are produced unless they are used by another process
+- the byproducts of the reduction of the electron acceptors are of significant environmental consequence
+- the electron donors when CO~2~ is the electron acceptor include H~2~ and acetic acid (CH~3~COOH)
+
+--></p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Wikipedia_contributors2017-id">
+<p>Wikipedia contributors. 2017. “Mass Diffusivity.” <a href="https://en.wikipedia.org/w/index.php?title=Mass_diffusivity&amp;oldid=814042123" class="uri">https://en.wikipedia.org/w/index.php?title=Mass_diffusivity&amp;oldid=814042123</a>. <a href="https://en.wikipedia.org/w/index.php?title=Mass_diffusivity&amp;oldid=814042123" class="uri">https://en.wikipedia.org/w/index.php?title=Mass_diffusivity&amp;oldid=814042123</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="aerobic-and-anaerobic-respiration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-Wetland-redox-cascade.Rmd",
+"text": "Edit"
+},
+"download": ["Textbook_BAE204.pdf", "Textbook_BAE204.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
