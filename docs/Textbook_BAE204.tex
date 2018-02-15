@@ -31,6 +31,46 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{natbib}
 \bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -84,7 +124,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-02-12}
+  \date{2018-02-15}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -133,6 +173,85 @@ streams and rivers. Practically, his research focuses on improving the
 treatment efficiencies of streams, wetlands, soils or woodchip
 bioreactors. Much of this research is based upon principles this
 textbook is trying to provide for students of all ages.
+
+\chapter{Introduction}\label{intro}
+
+You can label chapter and section titles using \texttt{\{\#label\}}
+after them, e.g., we can reference Chapter \ref{intro}. If you do not
+manually label them, there will be automatic labels anyway, e.g.,
+Chapter \ref{methods}.
+
+Figures and tables with captions will be placed in \texttt{figure} and
+\texttt{table} environments, respectively.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{Textbook_BAE204_files/figure-latex/nice-fig-1} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig}
+\end{figure}
+
+Reference a figure by its code chunk label with the \texttt{fig:}
+prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can
+reference tables generated from \texttt{knitr::kable()}, e.g., see Table
+\ref{tab:nice-tab}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
+  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
+  \DataTypeTok{booktabs =} \OtherTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:nice-tab}Here is a nice table!}
+\centering
+\begin{tabular}[t]{rrrrl}
+\toprule
+Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
+\midrule
+5.1 & 3.5 & 1.4 & 0.2 & setosa\\
+4.9 & 3.0 & 1.4 & 0.2 & setosa\\
+4.7 & 3.2 & 1.3 & 0.2 & setosa\\
+4.6 & 3.1 & 1.5 & 0.2 & setosa\\
+5.0 & 3.6 & 1.4 & 0.2 & setosa\\
+\addlinespace
+5.4 & 3.9 & 1.7 & 0.4 & setosa\\
+4.6 & 3.4 & 1.4 & 0.3 & setosa\\
+5.0 & 3.4 & 1.5 & 0.2 & setosa\\
+4.4 & 2.9 & 1.4 & 0.2 & setosa\\
+4.9 & 3.1 & 1.5 & 0.1 & setosa\\
+\addlinespace
+5.4 & 3.7 & 1.5 & 0.2 & setosa\\
+4.8 & 3.4 & 1.6 & 0.2 & setosa\\
+4.8 & 3.0 & 1.4 & 0.1 & setosa\\
+4.3 & 3.0 & 1.1 & 0.1 & setosa\\
+5.8 & 4.0 & 1.2 & 0.2 & setosa\\
+\addlinespace
+5.7 & 4.4 & 1.5 & 0.4 & setosa\\
+5.4 & 3.9 & 1.3 & 0.4 & setosa\\
+5.1 & 3.5 & 1.4 & 0.3 & setosa\\
+5.7 & 3.8 & 1.7 & 0.3 & setosa\\
+5.1 & 3.8 & 1.5 & 0.3 & setosa\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+You can write citations, too. For example, we are using the
+\textbf{bookdown} package \citep{R-bookdown} in this sample book, which
+was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \chapter{Life's secrets for capturing
 energy}\label{lifes-secrets-for-capturing-energy}
@@ -903,7 +1022,7 @@ engineering.
   come in play
 \item
   We try to take advantage of the anaerobic conditions to dissipate or
-  strip excess nutrients, e.g. \(NO_3^-\)
+  strip excess nutrients, e.g.~NO\textsubscript{3}\textsuperscript{-}
 \end{itemize}
 
 \subsection{Respiration schemes}\label{respiration-schemes}
@@ -918,7 +1037,7 @@ line}. Electrons are transferred from an electron donor to an electron
 acceptor. The consequences of the transfer are represented in
 \emph{thicker light blue arrows}. The first consequence of the transfer
 of electrons is the powering of proton pumps, which in turn create a
-proton gradient in the intermembrane space, which result into proton
+proton gradient in the inter-membrane space, which result into proton
 flow, which gives the necessary energy to catalyze the phosphorylation
 of ADP into ATP. The products of oxidation, reduction, and
 phosphorylation are represented in black arrows.
@@ -940,14 +1059,18 @@ is probably fair to simplify things to represent the majority of the
 processes (here 90\%). The beauty of this scheme is that it applies to
 just about all types of electron donors and acceptors.
 
-\subsection{Aerobic respiration
-schemes}\label{aerobic-respiration-schemes}
+\subsection{Aerobic respiration schemes for
+organotrophs}\label{aerobic-respiration-schemes-for-organotrophs}
 
-In the next scheme, we take the example of aerobic respiration, where
-glucose is considered as the electron donor, and O\textsubscript{2} the
-electron acceptor. In this case (Figure
-\ref{fig:aerobic-resp-scheme-glucose}), the by products of glucose as
-the carbon loses all its electrons becomes CO\textsubscript{2}.
+In the next scheme, we take the classic example of aerobic respiration,
+where glucose is considered as the electron donor, and
+O\textsubscript{2} the electron acceptor. Organisms which use
+\emph{organic} molecules as electron donors are referred to as
+organotrophs, hence the title. We shall later that some microorganisms
+are able to use inorganic molecules as their electron donors. In our
+case (Figure \ref{fig:aerobic-resp-scheme-glucose}), the byproduct of
+glucose as the carbon atoms lose all their electrons becomes
+CO\textsubscript{2}.
 
 \begin{figure}
 
@@ -964,8 +1087,8 @@ can be part of the electron transfer chain, but essentially all types of
 organic molecules, as represented in Figure \ref{fig:respiration-OM}. So
 the only difference with the previous scheme with glucose only, are the
 by-products of the \protect\hyperlink{catabolism}{catabolism} of organic
-matter: CO\textsubscript{2}, \(NH_4^+\), HS\textsuperscript{-}, and
-\(PO_4^{3-}\).
+matter: CO\textsubscript{2}, NH\textsubscript{4}\textsuperscript{+},
+HS\textsuperscript{-}, and PO\textsubscript{4}\textsuperscript{3-}.
 
 \begin{figure}
 
@@ -976,12 +1099,16 @@ matter: CO\textsubscript{2}, \(NH_4^+\), HS\textsuperscript{-}, and
 \caption{Aerobic respiration scheme illustrating the flow of electrons from organic matter to O~2~, the by-products of the oxidation of OM include ammonium, hydrogen sulfide and phosphate this time}\label{fig:aerobic-resp-scheme-OM}
 \end{figure}
 
-The important thing to notice here is that the N and S atoms, which
-possess 8 electron for themselves, or are fully reduced, in organic
-molecules, stay reduced as byproducts of the respiration. This is odd as
-mentioned before, because there are electrons available for an other
-oxidation. Lithotroph micro-organisms are specialized in taking
-advantage of these available electrons, as we shall see later.
+The important thing to notice here is that the N and S atoms, which in
+\emph{organic molecules} possess 8 electrons for themselves, or are
+fully reduced, \textbf{stay reduced} as byproducts of respiration. This
+might appear odd as mentioned before, because there are electrons
+available for another oxidation to take place. Lithotroph
+micro-organisms are specialized in taking advantage of these available
+electrons, as we shall see later. The important message here is that you
+can see that respiration processes essentially breakdown large molecules
+into small inorganic ones, and that in the case of respiration for
+organotrophs, the only atom to lose its electrons is carbon.
 
 \begin{figure}
 
@@ -992,77 +1119,222 @@ advantage of these available electrons, as we shall see later.
 \caption{Oxidative phosphorylation of organic molecules of carbohydrates but of other molecular families as well. Figure obtained from Essential Cell Biology from Garland Science}\label{fig:respiration-OM}
 \end{figure}
 
-\subsection{Anaerobic respiration
-schemes}\label{anaerobic-respiration-schemes}
+If we think about this apparent oddity, N and S are a lot more
+electronegative than C, so in the organotroph cell, it is a lot easier
+for oxygen to strip electrons from carbon than it is from N and S. It
+might be worth taking a hydraulic analogy: in a soil, pore water will
+tend to drain through the area of a soil that has the highest hydraulic
+conductivity, or use the path of least resistance, totally by-passing
+areas of lower hydraulic conductivity. Chemically, it is just a lot
+easier to obtain electrons and energy out of the reduced carbon, and a
+lot harder to obtain them from amine (-NH\textsubscript{2}) and thiol
+(-SH) radicals; this is why N and S stay in a reduced form as byproducts
+of organotroph respiration. Again, several group of
+\protect\hyperlink{litrotrophs}{lithotrophs} specifically target the
+electrons on ammonium and on Hydrogen sulfide, and use
+O\textsubscript{2} as their electron acceptor.
 
-But before we present the lithotrophs, and to show the remarkable
-consistency of life, it is time to recognize that there are many areas
-of earth where the imbalance between oxygen supply and demand is such
-that these environments are essentially anoxic. We will present these
-environments at length in the future chapters. In these anaerobic
-environments, only \textbf{unicellular microorganism are able to
-survive}. But these microbes have had to adapt their respiration to
-still be able to produce ATP for their metabolism, but using electron
-acceptors other than O\textsubscript{2}.
+In the next chapter, we will introduce all the respiration processes,
+aerobic and anaerobic, and performed by organotrophs and lithotrophs.
 
-In their order of most to the least poweful oxidizing agents, the list
+\chapter{The classic redox sequence of wetland
+soils}\label{the-classic-redox-sequence-of-wetland-soils}
+
+In the previous chapter, we introduced quite a few details on the
+molecular functioning of respiratory processes. We took aerobic
+respiration as our model to determine that most of the ATP produced in
+the cell is principally due to a proton flow from the inter-membrane
+space to the cytoplasm, for microbial cells and within the mitochondria
+for eukaryotic cells (Figure \ref{fig:respirationglobal}). The
+respiration schemes provide a very handy method to summarize the
+important drivers and consequences of respiration: the electron donors,
+the electron acceptors, and the byproducts of both oxidation and
+reduction. In this chapter we will use the same respiration schemes to
+explore the processes at play in wetland soils and the consequences on
+concentration gradients and movement of molecules of importance in
+environmental and ecological engineering.
+
+\section{The theoretical vertical sequence of respiratory processes in
+wetland
+soils}\label{the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils}
+
+The theoretical wetland soil used to illustrate our point has `enough'
+organic matter content for microbial respiration to take place
+throughout its profile, `enough' of other sand, silt, and clay and all
+the minerals that accompany them, including iron and manganese oxides.
+Let us assume that this theoretical soil, is sufficiently moist and
+aerated for microbial aerobic respiration to take place throughout the
+soil profile. Let us then assume that this soil is suddenly flooded, and
+let us explore the consequences of this.
+
+\subsection{An aerobic layer near the soil-water
+interface}\label{an-aerobic-layer-near-the-soil-water-interface}
+
+At first, all micro-organisms are going to use all the oxygen that might
+be present in the pore space. But because pore space is now getting
+filled with water, it is possible that the amount of oxygen available
+for microorganisms might change. And yes, indeed, water does not have
+nearly the capacity to provide oxygen as air does for several reasons:
+
+\begin{itemize}
+\tightlist
+\item
+  at 15°C in water there are about 10 mg of O\textsubscript{2} in one
+  liter of water. Comparatively, in one liter of air, there is about 300
+  mg of O\textsubscript{2}, or \textbf{30 times} more. How does one
+  calculate this? At standard conditions, 1 liter of air at 21\% oxygen
+  possesses 0.21 L of oxygen. Since for these conditions, 1 mole of gas
+  occupies 22.4 L, simply divide 0.21/22.4, to arrive at 0.0094 moles of
+  oxygen. Then the mass of oxygen in 1 liter of air is 0.0094×32 g/mole
+  = 300 mg.
+\item
+  the diffusivity (which quantifies the ability of elements to move
+  about) of O\textsubscript{2} in air is 0.176 cm²/s while that of
+  O\textsubscript{2} in water is 2.10×10\textsuperscript{−5} cm²/s, or
+  more than \textbf{8,000 times smaller}
+  \citep{Wikipedia_contributors2017-id}
+\end{itemize}
+
+In other words, it is good to remember that \textbf{the amount of oxygen
+available in water compared to air is about 30 less, and that oxygen in
+water moves almost 10,000 slower than in water}.
+
+So, one can clearly see that the potential supply of oxygen from flooded
+porewater is thus a lot more limited than in aerated pore space. Now,
+where is the potential source for supply of oxygen for our recently
+flooded soil? The answer is the atmosphere. For a real flooded wetland
+soil, another source of O\textsubscript{2} might be photosynthesis from
+algae and aquatic vegetation during the day. But in all cases, most of
+the oxygen needed for microbial aerobic respiration of our new flooded
+soil will have to travel the distance corresponding to the thickness of
+the water column, and, the linear distance within the porous medium of
+the soil, which can be quite \emph{tortuous}. This property of the
+soil/sediment has been factored in by researchers and been called
+\emph{tortuosity}.
+
+\textbf{In summary}, the supply of oxygen to bacteria in a flooded soil
+is limited because of four factors:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  there is about 30 times less O\textsubscript{2} in water than there is
+  in the same volume of air
+\item
+  the O\textsubscript{2} diffusive transport capacity in water is about
+  10,000 times smaller than that in air
+\item
+  O\textsubscript{2} has to travel from the atmosphere to the soil
+  through the thickness of the water column, and
+\item
+  travel through the tortuous path of the soil porous medium
+\end{enumerate}
+
+Not surprisingly, this supply is just too limited compared to the
+demand. As a result, most of our recently flooded soil bacteria consumes
+all the O\textsubscript{2} and the only part of the sediment that might
+have a little bit of oxygen is the area at the soil-water interface.
+This is what it illustrated in Figure
+\ref{fig:aerobic-layer-wetland-soil} below.
+
+\label{fig:aerobic-layer-wetland-soil}Animation summarizing the formation of
+aerobic and anaerobic zones of a theoretical flooded wetland soil due to
+the imbalance between bacterial respiratory oxygen demand and oxygen
+supply through the water column
+
+Because the O\textsubscript{2} demand exceeds the O\textsubscript{2}
+supply from the atmosphere and the water column, an O\textsubscript{2}
+concentration gradient forms from the soil-water interface down. This
+concentration gradient, in turn, drives a downward movement of oxygen
+from the water column into the sediment down to the depth where there is
+no more concentration gradient. This depth defines the beginning of the
+anaerobic zone of the sediment, and above, the aerobic layer of the
+sediment.
+
+\subsection{Respiration in the anaerobic zone of the
+soil}\label{respiration-in-the-anaerobic-zone-of-the-soil}
+
+What happens to all the microbes in the anaerobic zone of the sediment?
+Certainly the exclusively aerobic microbes just do not survive, but most
+bacteria are facultative aerobs. In other words, they can switch from
+aerobic to anaerobic respiration. Let us state this again: in the
+anaerobic zone of the sediment, only \textbf{unicellular microorganisms
+are able to survive} and have had to adapt their respiration to still be
+able to produce ATP for their metabolism, but using electron acceptors
+\emph{other than O\textsubscript{2}}.
+
+It turns out that thermodynamics dictate that not all electron acceptors
+can generate the same amount of energy when they strip electrons from
+their electron donors. As a result, one can classify electron acceptors
+in decreasing order from the most to the least oxidizing, and the list
 of preferred electron acceptors goes as such:
 
 \begin{itemize}
 \tightlist
 \item
-  nitrate or \(NO_3^-\)
+  nitrate or NO\textsubscript{3}\textsuperscript{-}
 \item
   Manganese oxide (MnO\textsubscript{2}) or Mn IV
 \item
   Iron oxides/hydroxyde or Fe III
 \item
-  sulfate or \(SO_4^{2-}\)
+  sulfate or SO\textsubscript{4}\textsuperscript{2-}
 \item
   Carbon dioxide or CO\textsubscript{2}
 \end{itemize}
 
-In other words, and although very different microbes are involved at the
-different stages, the apparent \emph{demand} for electron acceptor,
-e.g., in a wetland soil, can be described as such: oxygen is the
-preferred electron acceptor; when O\textsubscript{2} is all used,
-\(NO_3^-\) will be used as the preferred electron acceptor; when all the
-\(NO_3^-\) is used, the next most powerful electron acceptor is
-MnO\textsubscript{2}, which is present in a solid or mineral form in
-soils; when all the MnO\textsubscript{2} is used, then iron oxide or
-hydroxyde, which are in the solid phase (also referred to Fe III, as
-iron is in the Fe\textsuperscript{3+} ionic form) will be used as the
-preferred electron acceptor; when all the Fe is used, then \(SO_4^{2-}\)
-is used as the next preferred electron acceptor, and then when finally
-all the other electron acceptors have been all used, CO\textsubscript{2}
-can be the ultimate electron acceptor\ldots{}!
+Although very different microbes are involved at the different stages,
+the apparent \emph{demand} for electron acceptor, in our theoretical
+wetland soil, can be described as a \emph{temporal} sequence of events:
+oxygen is the preferred electron acceptor; when O\textsubscript{2} is
+all used, NO\textsubscript{3}\textsuperscript{-} will be used as the
+preferred electron acceptor; when all the
+NO\textsubscript{3}\textsuperscript{-} is used, the next most powerful
+electron acceptor is MnO\textsubscript{2} (also referred to Mn IV; IV
+corresponds to its \protect\hyperlink{oxidation-state}{oxidation
+state}), which is present in a solid or mineral form in soils; when all
+the MnO\textsubscript{2} is used, then iron oxide or hydroxyde, which
+are also in the solid phase (also referred to Fe III, III corresponds to
+its \protect\hyperlink{oxidation-state}{oxidation state}) will be used
+as the preferred electron acceptor; when all the Fe is used, then
+SO\textsubscript{4}\textsuperscript{2-} is used as the next preferred
+electron acceptor, and then when finally all the other electron
+acceptors have been all used, CO\textsubscript{2} can be the ultimate
+electron acceptor\ldots{}!
 
-We will go over all of these later when we look at redox processes at
-the sediment water interface, but the first thing to which I want to
-point your attention is that, except for when CO\textsubscript{2} is the
-electron acceptor:
+Finally, to this temporal sequence corresponds a theoretical
+\emph{spatial} sequence or zones where each of the electron acceptor
+essentially defines a soil layer, with the layers are organized with
+depth from the most to the least oxidizing electron acceptor as
+represented in Figure \ref{fig:wetland-soil-layers}
 
-\begin{itemize}
-\tightlist
-\item
-  organic matter is, for organotrophs, always the electron donors
-\item
-  as a result, the byproducts of catabolism or respiration when the
-  organic carbons lose their electrons are always the same:
-  CO\textsubscript{2}, \(NH_4^+\),
-  H\textsubscript{2}S/HS\textsuperscript{-}, and \(PO_4^{3-}\). This
-  means that at one point, all of these four (five if one counts both
-  H\textsubscript{2}S and HS\textsuperscript{-}, their exact proportion
-  depends on pH, see \protect\hyperlink{hydrogen-sulfide}{details in the
-  glossary} molecules will accumulate where they are produced unless
-  they are used by another process
-\item
-  the byproducts of the reduction of the electron acceptors are of
-  significant environmental consequence
-\item
-  the electron donors when CO\textsubscript{2} is the electron acceptor
-  include H\textsubscript{2} and acetic acide (CH\textsubscript{3}COOH)
-\end{itemize}
+\begin{figure}
+
+{\centering \includegraphics[width=0.55\linewidth]{pictures/wetland-soil-layers} 
+
+}
+
+\caption{Theoretical spatial layering of wetland soils corresponding to the electron acceptor available. In each layer, the oxidizing and the reduced forms are illustrated as oxidizing/reduced. *Not to scale*}\label{fig:wetland-soil-layers}
+\end{figure}
+
+It is now time to present the respiration processes in each of the
+\emph{redox} layer.
+
+\subsection{\texorpdfstring{A \emph{denitrification} layer below the
+aerobic
+layer}{A denitrification layer below the aerobic layer}}\label{a-denitrification-layer-below-the-aerobic-layer}
+
+The next most powerful or oxidizing electron acceptor after
+O\textsubscript{2} is NO\textsubscript{3}\textsuperscript{-}. We have
+seen in the previous chapters that the N atom in nitrate has zero
+electron for itself, hence its ability to accept electrons. Just like
+for aerobic respiration, nitrate reduction just does not happen on its
+own. Facultative anaerobic bacteria called \emph{denitrifiers} take
+advantage of the electrons available on organic matter and of nitrate to
+accept them to generate their energy.
+
+\emph{This chapter is still under construction}
 
 \hypertarget{glossary}{\chapter{Glossary}\label{glossary}}
 
@@ -1442,6 +1714,32 @@ HCO_3^- & \rightleftharpoons & CO_3^{2-} + H^+ \label{eq:HCO3}
   Carbonates are thus a great pH buffer in aquatic environments
 \end{itemize}
 
+\hypertarget{catabolism}{\subsection{Catabolism}\label{catabolism}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reactions involving the breaking down of organic substrates, typically
+  by oxidative breakdown, to provide chemically available energy (e.g.~A
+  TP) and/or to generate metabolic intermediates used in subsequent
+  anabolic reactions \citep{De_Bolster1997-ul}.
+\item
+  Synonyms:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aerobic and anaerobic \emph{respirations} which use organic
+    molecules as electron donors, are synonyms of catabolism.
+  \item
+    In soil science another synonym of catabolism is
+    \emph{mineralization}, which refers to the decomposition or
+    oxidation of the chemical compounds in organic matter releasing the
+    nutrients contained in those compounds into soluble inorganic forms
+    that may be plant-accessible \citep{Wikipedia_contributors2018-ew}.
+  \end{itemize}
+\end{itemize}
+
 \section{D}\label{d}
 
 \subsection{Dihydrogen sulfide}\label{dihydrogen-sulfide}
@@ -1520,8 +1818,7 @@ also contain gases that cause a greenhouse effect.
 
 \emph{\protect\hyperlink{top}{back to top}}
 
-\hypertarget{hydrogen-sulfide}{\subsection{Hydrogen
-Sulfide}\label{hydrogen-sulfide}}
+\subsection{Hydrogen Sulfide}\label{hydrogen-sulfide}
 
 \begin{itemize}
 \tightlist
@@ -1587,6 +1884,21 @@ HS^- & \rightleftharpoons & S^{2-}+ H^+ \label{eq:HS}
 \emph{\protect\hyperlink{top}{back to top}}
 
 \section{L}\label{l}
+
+\hypertarget{lithotrophs}{\subsection{Lithotrophs}\label{lithotrophs}}
+
+\begin{itemize}
+\tightlist
+\item
+  Lithotrophs are a diverse group of organisms using inorganic substrate
+  (usually of mineral origin) to obtain reducing equivalents for use in
+  biosynthesis (e.g., carbon dioxide fixation) or energy conservation
+  (i.e., ATP production) via aerobic or anaerobic respiration. Known
+  chemolithotrophs are exclusively microorganisms.
+  \citep{Wikipedia_contributors2018-na}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
 
 \subsection{Limiting factor}\label{limiting-factor}
 
@@ -1658,6 +1970,14 @@ source}\citep{Epa2016-yj}
 \tightlist
 \item
   Health effects:
+\end{itemize}
+
+\subsection{Mineralization}\label{mineralization}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{catabolism}{catabolism}
 \end{itemize}
 
 \section{N}\label{n}
@@ -1923,8 +2243,12 @@ state}\label{oxidation-state}}
 \item
   The oxidation state (\emph{OS}), or sometimes referred to as the
   oxidation number, quantifies the number of electrons that an atom has
-  gained or lost compared to the number of valence electrons it has in
-  its free form. As a result, it can be zero, positive or negative.
+  gained (expressed as \emph{\textbf{negative}} charge value) or lost
+  (expressed as \emph{\textbf{positive}} charge value) compared to the
+  number of valence electrons it has in its free form. As a result, it
+  can be zero, positive or negative.
+\item
+  For metal ions, the OS corresponds to its charge
 \item
   For example, the nitrogen atom N, has 5 valence electrons. In the
   dinitrogen molecule N\textsubscript{2}, the Lewis dot structure
