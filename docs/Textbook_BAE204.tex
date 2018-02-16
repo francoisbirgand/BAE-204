@@ -124,7 +124,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-02-15}
+  \date{2018-02-16}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -1044,7 +1044,7 @@ phosphorylation are represented in black arrows.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.75\linewidth]{pictures/generic-respiration-scheme} 
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-generic} 
 
 }
 
@@ -1064,13 +1064,7 @@ organotrophs}\label{aerobic-respiration-schemes-for-organotrophs}
 
 In the next scheme, we take the classic example of aerobic respiration,
 where glucose is considered as the electron donor, and
-O\textsubscript{2} the electron acceptor. Organisms which use
-\emph{organic} molecules as electron donors are referred to as
-organotrophs, hence the title. We shall later that some microorganisms
-are able to use inorganic molecules as their electron donors. In our
-case (Figure \ref{fig:aerobic-resp-scheme-glucose}), the byproduct of
-glucose as the carbon atoms lose all their electrons becomes
-CO\textsubscript{2}.
+O\textsubscript{2} the electron acceptor.
 
 \begin{figure}
 
@@ -1080,6 +1074,42 @@ CO\textsubscript{2}.
 
 \caption{Aerobic respiration scheme illustrating the flow of electrons from glucose to O~2~, the by-products of the respective oxidation and reduction being CO~2~ and H~2~O, and H~2~O. The consequences of the transfer of electrons on proton pumps, gradients and flow, which ultimately help catalyse the formation of ATP, do not change from the generic respiration scheme above}\label{fig:aerobic-resp-scheme-glucose}
 \end{figure}
+
+Using the generic carbohydrate CH\textsubscript{2}O as a source of
+electrons, it is possible to express the donation of electrons in
+equation \eqref{eq:OM-edonor} (redox half reaction):
+
+\begin{equation}
+CH_2O + H_2O \rightarrow CO_2 + 4 H^+ + 4 e^- 
+\label{eq:OM-edonor}
+\end{equation}
+
+Organisms which use \emph{organic} molecules as electron donors are
+referred to as \protect\hyperlink{trophic-names}{organotrophs}, hence
+the title. We shall see later that some microorganisms are able to use
+inorganic molecules as their electron donors. In our case (Figure
+\ref{fig:aerobic-resp-scheme-glucose}), the byproduct of glucose as the
+carbon atoms lose all their electrons becomes CO\textsubscript{2} as
+show in equation \eqref{eq:OM-edonor}.
+
+In turn, the electrons are accepted by O\textsubscript{2} following
+equation \eqref{eq:O2-eacceptor}
+
+\begin{equation}
+O_2 + 4 H^+ + 4 e^- \rightarrow 4H_2O  
+\label{eq:O2-eacceptor}
+\end{equation}
+
+The combination of donating electrons from glucose (equation
+\eqref{eq:OM-edonor}), or organic matter illustrated in Figure
+\ref{fig:aerobic-resp-scheme-OM}, combined with the accepting of these
+electrons by O\textsubscript{2} (equation \eqref{eq:O2-eacceptor}),
+results in the combined overall summary of aerobic respiration:
+
+\begin{equation}
+ CH_2O + O_2 \rightarrow CO_2 + H_2O  
+\label{eq:sum-resp-OM-O2}
+\end{equation}
 
 The third scheme (Figure \ref{fig:aerobic-resp-scheme-OM}), the generic
 term organic matter is used to show that in reality, not only glucose
@@ -1103,12 +1133,14 @@ The important thing to notice here is that the N and S atoms, which in
 \emph{organic molecules} possess 8 electrons for themselves, or are
 fully reduced, \textbf{stay reduced} as byproducts of respiration. This
 might appear odd as mentioned before, because there are electrons
-available for another oxidation to take place. Lithotroph
-micro-organisms are specialized in taking advantage of these available
-electrons, as we shall see later. The important message here is that you
-can see that respiration processes essentially breakdown large molecules
-into small inorganic ones, and that in the case of respiration for
-organotrophs, the only atom to lose its electrons is carbon.
+available for another oxidation to take place.
+\protect\hyperlink{trophic-names}{Lithotroph micro-organisms} are
+specialized in taking advantage of these available electrons, as we
+shall see later. The important message here is that you can see that
+respiration processes essentially breakdown large molecules into small
+inorganic ones, and that in the case of respiration for
+\protect\hyperlink{trophic-names}{organotrophs}, the only atom to lose
+its electrons is carbon.
 
 \begin{figure}
 
@@ -1129,10 +1161,10 @@ areas of lower hydraulic conductivity. Chemically, it is just a lot
 easier to obtain electrons and energy out of the reduced carbon, and a
 lot harder to obtain them from amine (-NH\textsubscript{2}) and thiol
 (-SH) radicals; this is why N and S stay in a reduced form as byproducts
-of organotroph respiration. Again, several group of
-\protect\hyperlink{litrotrophs}{lithotrophs} specifically target the
-electrons on ammonium and on Hydrogen sulfide, and use
-O\textsubscript{2} as their electron acceptor.
+of \protect\hyperlink{trophic-names}{organotrophic} respiration. Again,
+several group of \protect\hyperlink{trophic-names}{lithotrophs}
+specifically target the electrons on ammonium and on Hydrogen sulfide,
+and use O\textsubscript{2} as their electron acceptor.
 
 In the next chapter, we will introduce all the respiration processes,
 aerobic and anaerobic, and performed by organotrophs and lithotrophs.
@@ -1315,15 +1347,15 @@ represented in Figure \ref{fig:wetland-soil-layers}
 
 }
 
-\caption{Theoretical spatial layering of wetland soils corresponding to the electron acceptor available. In each layer, the oxidizing and the reduced forms are illustrated as oxidizing/reduced. *Not to scale*}\label{fig:wetland-soil-layers}
+\caption{Theoretical spatial layering of wetland soils corresponding to the electron acceptor available, *not too long after flooding*. In each layer, the oxidizing and the reduced forms are illustrated as oxidizing/reduced. *Not to scale*}\label{fig:wetland-soil-layers}
 \end{figure}
 
 It is now time to present the respiration processes in each of the
 \emph{redox} layer.
 
-\subsection{\texorpdfstring{A \emph{denitrification} layer below the
-aerobic
-layer}{A denitrification layer below the aerobic layer}}\label{a-denitrification-layer-below-the-aerobic-layer}
+\hypertarget{denit}{\subsection{\texorpdfstring{A \emph{denitrification}
+layer below the aerobic
+layer}{A denitrification layer below the aerobic layer}}\label{denit}}
 
 The next most powerful or oxidizing electron acceptor after
 O\textsubscript{2} is NO\textsubscript{3}\textsuperscript{-}. We have
@@ -1332,7 +1364,263 @@ electron for itself, hence its ability to accept electrons. Just like
 for aerobic respiration, nitrate reduction just does not happen on its
 own. Facultative anaerobic bacteria called \emph{denitrifiers} take
 advantage of the electrons available on organic matter and of nitrate to
-accept them to generate their energy.
+accept them to generate their energy. The denitrification of this
+theoretical wetland soil is referred to as
+\protect\hyperlink{trophic-names}{heterotrophic denitrification} because
+the source of carbon for these denitrifiers is also the source of
+electron, as OM is the source of both. On a side note, there are
+\protect\hyperlink{trophic-names}{autolithotrophic denitrifiers}, which
+use \href{https://en.wikipedia.org/wiki/Pyrite}{pyrite}
+FeS\textsubscript{2} as their source of electrons, and have to find
+their carbon from another source than OM.
+
+There are two possible byproducts of nitrate reduction:
+N\textsubscript{2}, which is the inert gas that makes 78\% of our
+atmosphere, and \protect\hyperlink{nitrous-oxide}{N\textsubscript{2}O},
+which is a potent \protect\hyperlink{GHG}{greenhouse gas}. The byproduct
+of the oxidation of OM are the same as the ones in aerobic heterotrophic
+respiration, i.e., CO\textsubscript{2},
+NH\textsubscript{4}\textsuperscript{+}, HS\textsuperscript{-}, and
+PO\textsubscript{4}\textsuperscript{3-}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-OM-NO3} 
+
+}
+
+\caption{Respiration scheme for heterotrophic denitrification}\label{fig:denit-resp}
+\end{figure}
+
+In reality, you will find in textbooks that denitrification involves not
+a direct reduction of nitrate into N\textsubscript{2} or
+N\textsubscript{2}O, but rather a sequence of reductions, summarized in
+equation \eqref{eq:denit-reduc-suite}, where nitrite, nitrogen monoxide,
+and nitrous oxides are intermediate products:
+
+\begin{equation}
+NO_3^- \rightarrow NO_2^- \rightarrow NO \rightarrow N_2O \rightarrow N_2
+\label{eq:denit-reduc-suite}
+\end{equation}
+
+Nitrous oxide is thus a sign of an incomplete denitrification. Because
+denitrification currently is the one mechanism, which removes nitrogen
+from the aqueous phase as gaseous byproduct, it currently ranks as the
+most effective ways to treat excess nitrogen in water. Entire research
+programs are dedicated to the development of methods and treatment
+systems to optimize this process. One of the active research areas is
+about finding ways to have have denitrification go all the way to the
+N\textsubscript{2} stage to minimize the production of
+N\textsubscript{2}O.
+
+Because this is a reduction process, and because nitrate is \emph{not
+assimilated} in the denitrifier cells, a very short and good definition
+of denitrification is the \emph{microbially mediated dissimilatory
+reduction of nitrate into dinitrogen}. Nitrate reduction (= gains
+electrons) in denitrification is illustrated in equation
+\eqref{eq:denit-half-reaction}:
+
+\begin{equation}
+2 NO_3^- + 10 e^- + 12 H^+ \rightarrow N_2 + 6 H_2O
+\label{eq:denit-half-reaction}
+\end{equation}
+
+A more complete and more descriptive definition of denitrification is
+
+\begin{quote}
+Denitrification refers to the dissimilatory reduction, by essentially
+aerobic bacteria, of one or both of the ionic nitrogen oxides (nitrate,
+NO\textsubscript{3}\textsuperscript{-}, and nitrite,
+NO\textsubscript{2}\textsuperscript{-}) to the gaseous oxides (nitric
+oxide, NO, and nitrous oxide, N\textsubscript{2}0), which may themselves
+be further reduced to dinitrogen (N\textsubscript{2}). The nitrogen
+oxides act as terminal electron acceptors in the absence of oxygen. The
+gaseous nitrogen species are major products of these reductive
+processes. \citep{Knowles1982-ku}
+\end{quote}
+
+Denitrification is thought to be inhibited by the presence of oxygen,
+and thus only occurs in our theoretical wetland soil, below the aerobic
+layer. However, denitrification only occurs if there is nitrate present
+as electron acceptor. Therefore, for denitrification to proceed, there
+must be a supply of nitrate that can compensate the demand due to
+denitrification. The only place from where nitrate can be supplied, is
+the water column, and, possibly, the aerobic layer of the sediment where
+nitrification can take place, as we shall see later.
+
+Following the same analysis as that of aerobic respiration, because of
+the transport distance for nitrate from the water column and through the
+aerobic layer of the sediment, the supply tends to be lower than the
+demand. This, with the demand below the supply, creates a concentration
+gradient, which generates a \textbf{downward flux} of nitrate from the
+water column through the aerobic zone of the sediment into the
+denitrification zone (layer 2 in Figure \ref{fig:wetland-soil-layers}).
+Nitrate thus just diffuse through layer 1, and is only used as electron
+acceptor in layer 2. Because the demand exceeds the supply, nitrate
+cannot move further down than the bottom of layer 2. Denitrification is
+thus restricted to layer 2.
+
+\subsection{Manganese and Iron oxides
+reductions}\label{manganese-and-iron-oxides-reductions}
+
+Below the denitrification layer, microbes have to find new electron
+acceptors for their respiration. After O\textsubscript{2}, which is a
+gas, NO\textsubscript{3}\textsuperscript{-}, which is a dissolved ion,
+the next elements which serve as electron acceptors are solids:
+Manganese and Iron oxides. They will serve as electron acceptors, only
+if soil minerals containing Mn and Fe oxides are present. In our
+theoretical wetland soil, the assumption is that these oxides are
+present. In layer 3 (Figure \ref{fig:wetland-soil-layers}),
+MnO\textsubscript{2} serve as the electron acceptor following the
+general equation \eqref{eq:MnO2-reduc-half-reaction} and respiration
+scheme illustrated in Figure \ref{fig:MnO2-resp}.
+
+\begin{equation}
+MnO_2 + 4 e^- + 4 H^+ \rightarrow Mn^{2+} + 2 H_2O
+\label{eq:MnO2-reduc-half-reaction}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-OM-Mn} 
+
+}
+
+\caption{Respiration scheme for heterotrophic Manganese oxide reduction}\label{fig:MnO2-resp}
+\end{figure}
+
+While the electron donor is immobile, the reduction of
+MnO\textsubscript{2} (equation \eqref{eq:MnO2-reduc-half-reaction})
+produces Mn\textsuperscript{2+} ions, which are dissolved, mobile in
+water, and can diffuse following concentration gradients. In our
+original hypothesis of the sudden flooding of the wetland soil,
+MnO\textsubscript{2} oxides would be reduced from layer 3 down. The
+Mn\textsuperscript{2+} ions produced in these layers, and the lack of
+Mn\textsuperscript{2+} ions in layers 1 and 2, would create a
+concentration gradient, which would generate an \textbf{upward flux} of
+Mn\textsuperscript{2+}, this time, from layers 3 to 6 into layers 2 and
+1. The fate of Mn\textsuperscript{2+} ions as they reach the aerobic
+layer is discussed below.
+
+After the MnO\textsubscript{2} oxides are reduced, the iron oxides and
+hydroxide minerals will similarly serve as electron donors following the
+general equation \eqref{eq:Fe-reduc-half-reaction}, and respiration scheme
+illustrated in Figure \ref{fig:Fe-resp}. The reduction of an iron
+hydroxide Fe(OH)\textsubscript{3} has been added to show that in
+reality, Fe\textsuperscript{3+} never exists as such, but almost always
+as iron oxides or hydroxides. Many forms of
+\href{https://en.wikipedia.org/wiki/Iron_oxide}{iron oxides} exist in
+soils, hence the choice of choosing iron hydroxide
+Fe(OH)\textsubscript{3} in equation \eqref{eq:Fe-reduc-half-reaction}.
+Fe\textsuperscript{3+}, Fe(OH)\textsubscript{3}, and other iron oxides
+are referred to as \emph{\textbf{ferric iron}} or Fe(III), because their
+\protect\hyperlink{oxidation-state}{oxidation state} is 3. Ferric iron
+generally has an orange rusty color.
+
+\begin{align}
+Fe^{3+} + 1 e^- & \rightarrow & Fe^{2+} \\
+Fe(OH)_3 + 1 e^- + 3 H^+ & \rightarrow & Fe^{2+} + 3 H_2O
+\label{eq:Fe-reduc-half-reaction}
+\end{align}
+
+The overall transfer of electrons from the organic matter can be written
+as:
+
+\begin{equation}
+CH_2O + 4 Fe^{3+} + H_2O \rightarrow 4 Fe^{2+} + CO_2  + 4 H^+
+\label{eq:Fe-reduc}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-OM-Fe} 
+
+}
+
+\caption{Respiration scheme for heterotrophic Iron oxide reduction}\label{fig:Fe-resp}
+\end{figure}
+
+Similarly to Mn\textsuperscript{2+} ions, Fe\textsuperscript{2+} ions,
+or \emph{\textbf{ferrous iron}}, or Fe(II) is a dissolved iron which is
+mobile in water, and can diffuse following concentration gradients. For
+the same reasons explained above for Mn\textsuperscript{2+}, an upward
+concentration gradient between zones 4 to 6 and layers 3 to 1 is going
+to appear and the Fe\textsuperscript{2+} ions will tend to diffuse
+\textbf{upward} through layers 3 and 2. The fate of
+Fe\textsuperscript{2+} ions as they reach the aerobic layer is discussed
+below.
+
+This vertical spatial sequence of layers 3 and 4 presented here probably
+only applies not too long after the theoretical wetland soil has been
+flooded. Indeed, over the long periods, the supply of ferric iron and
+manganese oxides will run out, as the only supply is in immobile mineral
+forms. So over long periods, layers 3 and 4 do not exist. Is the case of
+a no net downward water infiltration, the Fe\textsuperscript{2+} and
+Mn\textsuperscript{2+} ions diffuse upward all the way into the aerobic
+layer, and accumulate there for reasons illustrated below. In the more
+likely case of small but real net downward flux of water, the dissolved
+ions will leach out of the soil profile. The consequences are that
+poorly drained soils then to leach out their iron and manganese, which
+is referred to as \emph{\textbf{iron and manganese depletion}}. This is
+the reason for the grey color of hydric soils (Figure
+\ref{fig:Fe-depletion}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/hydric-soil} 
+
+}
+
+\caption{Example of pale bluish gray redox depletions. Note the faint rusty orange concentration distributed throughout the soil matrix. Reproduced with permission © 2012 Nature Education All rights reserved.}\label{fig:Fe-depletion}
+\end{figure}
+
+\subsection{Sulfate reduction}\label{sulfate-reduction}
+
+After all previous electron acceptors have been used, sulfate becomes
+the next electron acceptor. As we have seen before, the sulfur atom on
+SO\textsubscript{4}\textsuperscript{2-} has zero electrons for itself
+and it therefore can accept electrons following
+\href{redox-half-reactions}{redox half-reaction} equation
+\eqref{eq:SO4-reduc-half-reaction}.
+
+\begin{equation}
+SO_4^{2-} + 8 e^- + 10 H^+ \rightarrow H_2S + 4 H_2O 
+\label{eq:SO4-reduc-half-reaction}
+\end{equation}
+
+While the electron donor is still organic matter as shown in Figure
+\ref{fig:SO4-resp}, the overall transfer of electron from the OM to
+sulfate can be written as:
+
+\begin{equation}
+2 CH_2O + SO_4^{2-} + 2 H^+ \rightarrow H_2S + 2 CO_2  + 2 H_2O 
+\label{eq:SO4-reduc}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-OM-SO4} 
+
+}
+
+\caption{Respiration scheme for heterotrophic Iron oxide reduction}\label{fig:SO4-resp}
+\end{figure}
+
+Typical concentrations of sulfate in ground- and stream waters are
+between 1 and 10 mg SO\textsubscript{4}\textsuperscript{2-}/L. In our
+theoretical wetland soil profile, sulfate that might be originally
+present in the porewater will be reduced in layers 5 and 6 of Figure
+\ref{fig:wetland-soil-layers}. For the same reasons invoked for oxygen
+and nitrate, the potential source of supply for sulfate for the sulfate
+reducing layer is all the sulfate that might be present in the layers
+above and the water column. The demand for sulfate in layer 5 will
+create a downward concentration gradient which will generate a downward
+diffusive movement of sulfate down to layer 5. And again, because of all
+the diffusion distance, the supply of
+SO\textsubscript{4}\textsuperscript{2-} is limited and does not match
+the demand. The imbalance between the sulfate supply and demand will
+limit the diffusion of sulfate to the bottom of layer 5, below which
+there will be no sulfate any more.
 
 \emph{This chapter is still under construction}
 
@@ -1742,12 +2030,24 @@ HCO_3^- & \rightleftharpoons & CO_3^{2-} + H^+ \label{eq:HCO3}
 
 \section{D}\label{d}
 
+\hypertarget{denitrification}{\subsection{Denitrification}\label{denitrification}}
+
+\begin{itemize}
+\tightlist
+\item
+  The \emph{microbially mediated dissimilatory reduction of nitrate into
+  dinitrogen}
+\item
+  see \protect\hyperlink{denit}{denitrification in chapters} for more
+  details
+\end{itemize}
+
 \subsection{Dihydrogen sulfide}\label{dihydrogen-sulfide}
 
 \begin{itemize}
 \tightlist
 \item
-  see hydrogen sulfide
+  see \protect\hyperlink{H2S}{hydrogen sulfide}
 \end{itemize}
 
 \emph{\protect\hyperlink{top}{back to top}}
@@ -1818,7 +2118,7 @@ also contain gases that cause a greenhouse effect.
 
 \emph{\protect\hyperlink{top}{back to top}}
 
-\subsection{Hydrogen Sulfide}\label{hydrogen-sulfide}
+\hypertarget{H2S}{\subsection{Hydrogen Sulfide}\label{H2S}}
 
 \begin{itemize}
 \tightlist
@@ -2123,7 +2423,8 @@ of a Blue Baby from syndromespedia.com/blue-baby-syndrome.html}}
 
 \emph{\protect\hyperlink{top}{back to top}}
 
-\subsection{Nitrous Oxide}\label{nitrous-oxide}
+\hypertarget{nitrous-oxide}{\subsection{Nitrous
+Oxide}\label{nitrous-oxide}}
 
 \begin{itemize}
 \item
@@ -2249,6 +2550,11 @@ state}\label{oxidation-state}}
   can be zero, positive or negative.
 \item
   For metal ions, the OS corresponds to its charge
+\item
+  The \emph{change} in oxidation state is a very powerful tool to
+  understand the \protect\hyperlink{redox}{redox} processes involved in
+  the environement. But OS is less than ideal when comparing the
+  absolute number of electrons one element \emph{has for itself}
 \item
   For example, the nitrogen atom N, has 5 valence electrons. In the
   dinitrogen molecule N\textsubscript{2}, the Lewis dot structure
@@ -2426,7 +2732,212 @@ HPO_4^{2-}& \rightleftharpoons & PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
 
 \section{R}\label{r}
 
-\subsection{Reduction}\label{reduction}
+\subsection{Reactive nitrogen}\label{reactive-nitrogen}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\hypertarget{redox}{\subsection{Redox}\label{redox}}
+
+\begin{itemize}
+\tightlist
+\item
+  Redox (short for reduction--oxidation reaction) is a chemical reaction
+  in which the oxidation states of atoms are changed. Any such reaction
+  involves both a \protect\hyperlink{reduction}{reduction} process and a
+  complementary \protect\hyperlink{oxidation}{oxidation} process,
+  effectively allowing the electron transfer processes.
+\end{itemize}
+
+\subsection{Redox couple}\label{redox-couple}
+
+\begin{itemize}
+\tightlist
+\item
+  redox couples, commonly noted as `Ox/Red' refer to the two forms that
+  an element might take depending on its
+  \protect\hyperlink{oxidation-state}{oxidation state}
+\item
+  Ox in `Ox/Red' refers to as the \emph{oxidizer} or oxidizing agent, as
+  it has the capability to make other elements \textbf{lose} their
+  electrons.
+\item
+  Red in `Ox/Red' refers to as the \emph{reducer} or reducing agent, as
+  it has the capability to \textbf{give} electrons to other elements
+\item
+  Common redox couples which matter in environmental and ecological
+  engineering include:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CO\textsubscript{2}/CH\textsubscript{2}O
+  \item
+    O\textsubscript{2}/H\textsubscript{2}O
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/N\textsubscript{2}
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/NH\textsubscript{4}\textsuperscript{+}
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/NO\textsubscript{2}\textsuperscript{-}
+  \item
+    MnO\textsubscript{2}/Mn\textsuperscript{2+}
+  \item
+    Fe\textsuperscript{3+}/Fe\textsuperscript{2+}
+  \item
+    SO\textsubscript{4}\textsuperscript{2-}/H\textsubscript{2}S
+  \item
+    CO\textsubscript{2}/CH\textsubscript{4}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Redox half-reactions}\label{redox-half-reactions}
+
+\begin{itemize}
+\tightlist
+\item
+  A half reaction is either the oxidation or reduction reaction
+  component of a redox reaction. A half reaction is obtained by
+  considering the change in oxidation states of individual substances
+  involved in the redox reaction \citep{Wikipedia_contributors2018-be}
+\item
+  Redox half reactions illustrate the transfer of electrons from the
+  oxidized form of an element to a reduced form of an element.
+\item
+  Half-reactions are often used as a method of balancing redox reactions
+\item
+  To derive half-reactions,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    the first convention is that the oxidizer is on the left of the
+    equation, and the reducer on the right
+  \item
+    one must first equilibrate all elements other than O and H
+  \item
+    then one balances for O, by adding H\textsubscript{2}O on the
+    appropriate side of the half reaction
+  \item
+    then one add the appropriate number of H\textsuperscript{+} to
+    balance the H
+  \item
+    Finally one adds the appropriate number of e\textsuperscript{-} to
+    balance the charge. The number of e\textsuperscript{-} must
+    correspond to the change in
+    \protect\hyperlink{oxidation-state}{oxidation state}
+  \end{itemize}
+\item
+  The half-reactions corresponding to the redox couples above are:
+\item
+  CO\textsubscript{2}/CH\textsubscript{2}O
+\end{itemize}
+
+\begin{equation}
+CO_2 + 4 H^+ + 4 e^- \rightarrow CH_2O + H_2O  
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  CH\textsubscript{2}O here is a generic formula to represent the
+  electron donating capacity of OM. This equation might be misleading as
+  it corresponds to the OM donating 4 electrons in the respiration
+  schemes, but because it is written using the ox/red convention, is the
+  opposite of the intuitive direction. So a more intuitive half-reaction
+  might be, and is effectively what is used to write the full redox
+  reaction:
+\end{itemize}
+
+\begin{equation}
+CH_2O + H_2O \rightarrow CO_2 + 4 H^+ + 4 e^-
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  O\textsubscript{2}/H\textsubscript{2}O
+\end{itemize}
+
+\begin{equation}
+O_2 + 4 H^+ + 4 e^- \rightarrow 4H_2O  
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  NO\textsubscript{3}\textsuperscript{-}/N\textsubscript{2}
+\end{itemize}
+
+\begin{equation}
+2 NO_3^- + 10 e^- + 12 H^+ \rightarrow N_2 + 6 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  MnO\textsubscript{2}/Mn\textsuperscript{2+}
+\end{itemize}
+
+\begin{equation}
+MnO_2 + 4 e^- + 4 H^+ \rightarrow Mn^{2+} + 2 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  Fe\textsuperscript{3+}/Fe\textsuperscript{2+}
+\end{itemize}
+
+\begin{equation}
+Fe^{3+} + 1 e^- \rightarrow Fe^{2+} \\
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  SO\textsubscript{4}\textsuperscript{2-}/H\textsubscript{2}S
+\end{itemize}
+
+\begin{equation}
+SO_4^{2-} + 8 e^- + 10 H^+  \rightarrow H_2S + 4 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  CO\textsubscript{2}/CH\textsubscript{4}
+\end{itemize}
+
+\begin{equation}
+CO_2 + 8 e^- + 8 H^+ \rightarrow CH_4 + 2 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  a redox reaction \textbf{always} involves two half reactions where the
+  electrons are transfered from the lowest redox potential couple to the
+  highest redox potential couple. For example, the combustion of methane
+  in oxygen involves the two O\textsubscript{2}/H\textsubscript{2}O and
+  CO\textsubscript{2}/CH\textsubscript{4} couples. The half-reaction of
+  the highest redox potential couple goes on top, and that of the lowest
+  potential at the bottom, but this time written as red/ox like in the
+  equation below:
+\end{itemize}
+
+\begin{align}
+2\,O_2 + 8\,H^+ + 8\,e^- & \rightleftharpoons & 4\,H_2O\\
+CH_4 + 2\,H_2O & \rightleftharpoons & CO_2 + 8\,H^+ + 8\,e^-\\
+& &\\
+\hline\\
+CH_4 + 2\,O_2 & \to & CO_2 + 2\,H_2O
+\end{align}
+
+\hypertarget{reduction}{\subsection{Reduction}\label{reduction}}
 
 \begin{itemize}
 \tightlist
@@ -2485,6 +2996,131 @@ HPO_4^{2-}& \rightleftharpoons & PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
 \end{itemize}
 
 \emph{\protect\hyperlink{top}{back to top}}
+
+\section{T}\label{t}
+
+\hypertarget{trophic-names}{\subsection{Trophic
+names}\label{trophic-names}}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of carbon, the source of electrons, and the
+  source of energy, organisms have been qualified and called
+  differently.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{carbon}}
+\end{itemize}
+
+\textbf{Autotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Auto}\emph{trophs} obtain their carbon needs, on their own,
+  hence \emph{Auto}.
+\item
+  In other words, they obtain their carbon from CO\textsubscript{2} and
+  carbonates
+\item
+  Just about all green plants and algae are autotrophs
+\end{itemize}
+
+\textbf{Heterotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Hetero}\emph{trophs} obtain their carbon needs, from
+  \emph{others}, hence \emph{Hetero}.
+\item
+  In other words, they obtain their carbon from organic matter, some of
+  which might also serve as a source of electrons
+\item
+  All animals are heterotrophs, and most bacteria are too.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{electrons}}
+\end{itemize}
+
+\textbf{Lithotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Litho}\emph{trophs} obtain their reducing power or their high
+  energy electrons from inorganic molecules, or \emph{mineral matter}.
+  Literally, \emph{rock eaters}.
+\item
+  In other words, they obtain their electrons from molecules or atoms
+  like NH\textsubscript{4}\textsuperscript{+} or Fe\textsuperscript{2+}.
+\item
+  ALL Lithotrophs are unicellular microorganisms
+\item
+  In the examples above, nitrifiers and iron oxidizing bacteria are
+  lithotrophs
+\end{itemize}
+
+\textbf{Organotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Organo}\emph{trophs} obtain their reducing power or their high
+  energy electrons from \emph{organic} molecules, hence the
+  \emph{organo}\\
+\item
+  In other words, they obtain their electrons from organic matter
+\item
+  All pluricellular organisms are organotrophs 
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{energy}}
+\end{itemize}
+
+\textbf{Phototrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Photo}\emph{trophs} obtain their energy primarily through
+  sunlight.
+\item
+  In reality, at night, phototrophs become chemotrophs as their cellular
+  respiration is based upon oxidizing organic matter. But they are
+  autosufficient. They capture solar energy and store it in a chemical
+  form thanks to photosynthesis, and used that stored energy later on.
+\item
+  Just about all green plants are phototrophs.
+\end{itemize}
+
+\textbf{Chemotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Chemo}\emph{trophs} obtain their energy as energy previously
+  stored in a chemical form.
+\item
+  Just about all pluricellular organisms are chemotrophs, even the
+  phototrophs, which turn into chemotrophs at night 
+\end{itemize}
 
 \bibliography{book.bib,packages.bib}
 
