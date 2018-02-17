@@ -124,7 +124,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-02-16}
+  \date{2018-02-17}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -1190,16 +1190,19 @@ environmental and ecological engineering.
 wetland
 soils}\label{the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils}
 
-The theoretical wetland soil used to illustrate our point has `enough'
-organic matter content for microbial respiration to take place
-throughout its profile, `enough' of other sand, silt, and clay and all
-the minerals that accompany them, including iron and manganese oxides.
-Let us assume that this theoretical soil, is sufficiently moist and
-aerated for microbial aerobic respiration to take place throughout the
-soil profile. Let us then assume that this soil is suddenly flooded, and
-let us explore the consequences of this.
+For this we will use a theoretical wetland soil to illustrate our point.
+Such theoretical soil has `enough' organic matter content for microbial
+respiration to take place throughout its profile, `enough' of other
+sand, silt, and clay and all the minerals that accompany them, including
+iron and manganese oxides. Let us assume that this theoretical soil, is
+sufficiently moist and aerated for microbial aerobic respiration to take
+place throughout the soil profile. Let us then assume that this soil is
+suddenly flooded, and let us explore the consequences of this.
+Respiratory processes are going to occur on a temporal sequence, which
+in fact will be mirrored by vertical sequence of processes in the
+wetland sediment.
 
-\subsection{An aerobic layer near the soil-water
+\section{An aerobic layer near the soil-water
 interface}\label{an-aerobic-layer-near-the-soil-water-interface}
 
 At first, all micro-organisms are going to use all the oxygen that might
@@ -1284,7 +1287,7 @@ no more concentration gradient. This depth defines the beginning of the
 anaerobic zone of the sediment, and above, the aerobic layer of the
 sediment.
 
-\subsection{Respiration in the anaerobic zone of the
+\section{Respiration in the anaerobic zone of the
 soil}\label{respiration-in-the-anaerobic-zone-of-the-soil}
 
 What happens to all the microbes in the anaerobic zone of the sediment?
@@ -1353,7 +1356,7 @@ represented in Figure \ref{fig:wetland-soil-layers}
 It is now time to present the respiration processes in each of the
 \emph{redox} layer.
 
-\hypertarget{denit}{\subsection{\texorpdfstring{A \emph{denitrification}
+\hypertarget{denit}{\section{\texorpdfstring{A \emph{denitrification}
 layer below the aerobic
 layer}{A denitrification layer below the aerobic layer}}\label{denit}}
 
@@ -1417,12 +1420,24 @@ Because this is a reduction process, and because nitrate is \emph{not
 assimilated} in the denitrifier cells, a very short and good definition
 of denitrification is the \emph{microbially mediated dissimilatory
 reduction of nitrate into dinitrogen}. Nitrate reduction (= gains
-electrons) in denitrification is illustrated in equation
+electrons) in denitrification is illustrated in the
+\protect\hyperlink{redox}{redox half reaction}
 \eqref{eq:denit-half-reaction}:
 
 \begin{equation}
-2 NO_3^- + 10 e^- + 12 H^+ \rightarrow N_2 + 6 H_2O
+2 NO_3^- + 10 e^- + 12 H^+ \rightleftharpoons N_2 + 6 H_2O
 \label{eq:denit-half-reaction}
+\end{equation}
+
+The overall transfer of electrons from the organic matter to
+NO\textsubscript{3}\textsuperscript{-}, can be written as the
+combination of equation \eqref{eq:denit-half-reaction} and equation
+\eqref{eq:OM-edonor}, to yield, let us admit it a rather complicated
+equation:
+
+\begin{equation}
+5 CH_2O + 4 NO_3^- + 4 H^+ \rightarrow 5 CO_2 + 2 N_2 + 7 H_2O
+\label{eq:denit-reduc}
 \end{equation}
 
 A more complete and more descriptive definition of denitrification is
@@ -1460,24 +1475,34 @@ acceptor in layer 2. Because the demand exceeds the supply, nitrate
 cannot move further down than the bottom of layer 2. Denitrification is
 thus restricted to layer 2.
 
-\subsection{Manganese and Iron oxides
+\section{Manganese and Iron oxides
 reductions}\label{manganese-and-iron-oxides-reductions}
 
 Below the denitrification layer, microbes have to find new electron
 acceptors for their respiration. After O\textsubscript{2}, which is a
-gas, NO\textsubscript{3}\textsuperscript{-}, which is a dissolved ion,
+gas, NO\textsubscript{3}\textsuperscript{-}, which is a dissolved anion,
 the next elements which serve as electron acceptors are solids:
 Manganese and Iron oxides. They will serve as electron acceptors, only
 if soil minerals containing Mn and Fe oxides are present. In our
 theoretical wetland soil, the assumption is that these oxides are
 present. In layer 3 (Figure \ref{fig:wetland-soil-layers}),
 MnO\textsubscript{2} serve as the electron acceptor following the
-general equation \eqref{eq:MnO2-reduc-half-reaction} and respiration
-scheme illustrated in Figure \ref{fig:MnO2-resp}.
+general redox half-reaction \eqref{eq:MnO2-reduc-half-reaction}, and
+respiration scheme illustrated in Figure \ref{fig:MnO2-resp}.
 
 \begin{equation}
-MnO_2 + 4 e^- + 4 H^+ \rightarrow Mn^{2+} + 2 H_2O
+MnO_2 + 4 e^- + 4 H^+ \rightleftharpoons Mn^{2+} + 2 H_2O
 \label{eq:MnO2-reduc-half-reaction}
+\end{equation}
+
+The overall transfer of electrons from the organic matter to
+MnO\textsubscript{2}, i.e., the combination of equation
+\eqref{eq:MnO2-reduc-half-reaction} and equation \eqref{eq:OM-edonor} can be
+written as:
+
+\begin{equation}
+CH_2O + MnO_2 \rightarrow Mn^{2+} + CO_2 + H_2O 
+\label{eq:MnO2-reduc}
 \end{equation}
 
 \begin{figure}
@@ -1518,13 +1543,15 @@ are referred to as \emph{\textbf{ferric iron}} or Fe(III), because their
 generally has an orange rusty color.
 
 \begin{align}
-Fe^{3+} + 1 e^- & \rightarrow & Fe^{2+} \\
-Fe(OH)_3 + 1 e^- + 3 H^+ & \rightarrow & Fe^{2+} + 3 H_2O
+Fe^{3+} + 1 e^- & \rightleftharpoons & Fe^{2+} \\
+Fe(OH)_3 + 1 e^- + 3 H^+ & \rightleftharpoons & Fe^{2+} + 3 H_2O
 \label{eq:Fe-reduc-half-reaction}
 \end{align}
 
-The overall transfer of electrons from the organic matter can be written
-as:
+The overall transfer of electrons from the organic matter to ferric iron
+can be written as the combination of equation
+\eqref{eq:Fe-reduc-half-reaction} and equation \eqref{eq:OM-edonor} to
+yield:
 
 \begin{equation}
 CH_2O + 4 Fe^{3+} + H_2O \rightarrow 4 Fe^{2+} + CO_2  + 4 H^+
@@ -1574,7 +1601,7 @@ the reason for the grey color of hydric soils (Figure
 \caption{Example of pale bluish gray redox depletions. Note the faint rusty orange concentration distributed throughout the soil matrix. Reproduced with permission © 2012 Nature Education All rights reserved.}\label{fig:Fe-depletion}
 \end{figure}
 
-\subsection{Sulfate reduction}\label{sulfate-reduction}
+\section{Sulfate reduction}\label{sulfate-reduction}
 
 After all previous electron acceptors have been used, sulfate becomes
 the next electron acceptor. As we have seen before, the sulfur atom on
@@ -1584,7 +1611,7 @@ and it therefore can accept electrons following
 \eqref{eq:SO4-reduc-half-reaction}.
 
 \begin{equation}
-SO_4^{2-} + 8 e^- + 10 H^+ \rightarrow H_2S + 4 H_2O 
+SO_4^{2-} + 8 e^- + 10 H^+ \rightleftharpoons H_2S + 4 H_2O 
 \label{eq:SO4-reduc-half-reaction}
 \end{equation}
 
@@ -1620,7 +1647,71 @@ the diffusion distance, the supply of
 SO\textsubscript{4}\textsuperscript{2-} is limited and does not match
 the demand. The imbalance between the sulfate supply and demand will
 limit the diffusion of sulfate to the bottom of layer 5, below which
-there will be no sulfate any more.
+there will be no more sulfate.
+
+\section{The methanogenesis oddity}\label{the-methanogenesis-oddity}
+
+The last \protect\hyperlink{redox}{redox} reactions to take place at the
+bottom of our theoretical wetland soil uses CO\textsubscript{2} as the
+electron acceptor. Interestingly, the generic organic matter is no
+longer the electron donor, but is replaced by two byproducts of
+fermentation processes: H\textsubscript{2} and acetic acid
+CH\textsubscript{3}COOH as illustrated in Figure \ref{fig:CO2-resp}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{pictures/respiration-OM-CO2} 
+
+}
+
+\caption{Respiration scheme for heterotrophic Iron oxide reduction}\label{fig:CO2-resp}
+\end{figure}
+
+The fermentation products are beyond the scope of this class so, we will
+not come back to that, but it is important to recognize that
+H\textsubscript{2} and CH\textsubscript{3}COOH can donate electrons as
+shown in these half-reactions:
+
+\begin{equation}
+H_2 \rightleftharpoons 2H^+ + 2 e^- 
+\label{eq:H2-half-reaction}
+\end{equation}
+
+and
+
+\begin{equation}
+CH_3COOH + 2 H_2O \rightleftharpoons 2 CO_2 + 8 H^+ + 8 e^- 
+\label{eq:acetic-acid-half-reaction}
+\end{equation}
+
+\section{Summary on the redox chain in wetland
+soils}\label{summary-on-the-redox-chain-in-wetland-soils}
+
+\begin{itemize}
+\tightlist
+\item
+  except for methanogenesis, organic matter always serves, for
+  \protect\hyperlink{trophic-names}{organotrophs}, as the electron
+  donor. Moreover, it is exclusively the Carbon of the OM which provides
+  the electrons.
+\item
+  as a result, the byproducts of the oxidation of the OM when the
+  organic carbons lose their electrons are always the same:
+  CO\textsubscript{2}, NH\textsubscript{4}\textsuperscript{+},
+  H\textsubscript{2}S/HS\textsuperscript{-}, and
+  PO\textsubscript{4}\textsuperscript{3-}. This means that at one point,
+  all of these four (five if one counts both H\textsubscript{2}S and
+  HS\textsuperscript{-}, their exact proportion depends on pH, see
+  \protect\hyperlink{hydrogen-sulfide}{details in the glossary})
+  molecules will accumulate where they are produced unless they are used
+  by another process
+\item
+  To the contrary, the byproducts of the reduction of the electron
+  acceptors are variable and depend on the electron acceptor. In the
+  case of incomplete denitrification, and in the case of methanogenesis,
+  N\textsubscript{2}O and CH\textsubscript{4} are significant
+  \protect\hyperlink{GHG}{greenhouse gases}.
+\end{itemize}
 
 \emph{This chapter is still under construction}
 
@@ -2822,7 +2913,7 @@ HPO_4^{2-}& \rightleftharpoons & PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
     then one balances for O, by adding H\textsubscript{2}O on the
     appropriate side of the half reaction
   \item
-    then one add the appropriate number of H\textsuperscript{+} to
+    then one adds the appropriate number of H\textsuperscript{+} to
     balance the H
   \item
     Finally one adds the appropriate number of e\textsuperscript{-} to
@@ -2837,7 +2928,7 @@ HPO_4^{2-}& \rightleftharpoons & PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
 \end{itemize}
 
 \begin{equation}
-CO_2 + 4 H^+ + 4 e^- \rightarrow CH_2O + H_2O  
+CO_2 + 4 H^+ + 4 e^- \rightleftharpoons CH_2O + H_2O  
 \end{equation}
 
 \begin{itemize}
@@ -2853,7 +2944,7 @@ CO_2 + 4 H^+ + 4 e^- \rightarrow CH_2O + H_2O
 \end{itemize}
 
 \begin{equation}
-CH_2O + H_2O \rightarrow CO_2 + 4 H^+ + 4 e^-
+CH_2O + H_2O \rightleftharpoons CO_2 + 4 H^+ + 4 e^-
 \end{equation}
 
 \begin{itemize}
@@ -2863,7 +2954,7 @@ CH_2O + H_2O \rightarrow CO_2 + 4 H^+ + 4 e^-
 \end{itemize}
 
 \begin{equation}
-O_2 + 4 H^+ + 4 e^- \rightarrow 4H_2O  
+O_2 + 4 H^+ + 4 e^- \rightleftharpoons 4H_2O  
 \end{equation}
 
 \begin{itemize}
@@ -2873,7 +2964,7 @@ O_2 + 4 H^+ + 4 e^- \rightarrow 4H_2O
 \end{itemize}
 
 \begin{equation}
-2 NO_3^- + 10 e^- + 12 H^+ \rightarrow N_2 + 6 H_2O
+2 NO_3^- + 10 e^- + 12 H^+ \rightleftharpoons N_2 + 6 H_2O
 \end{equation}
 
 \begin{itemize}
@@ -2883,7 +2974,7 @@ O_2 + 4 H^+ + 4 e^- \rightarrow 4H_2O
 \end{itemize}
 
 \begin{equation}
-MnO_2 + 4 e^- + 4 H^+ \rightarrow Mn^{2+} + 2 H_2O
+MnO_2 + 4 e^- + 4 H^+ \rightleftharpoons Mn^{2+} + 2 H_2O
 \end{equation}
 
 \begin{itemize}
@@ -2893,7 +2984,7 @@ MnO_2 + 4 e^- + 4 H^+ \rightarrow Mn^{2+} + 2 H_2O
 \end{itemize}
 
 \begin{equation}
-Fe^{3+} + 1 e^- \rightarrow Fe^{2+} \\
+Fe^{3+} + 1 e^- \rightleftharpoons Fe^{2+} \\
 \end{equation}
 
 \begin{itemize}
@@ -2903,7 +2994,7 @@ Fe^{3+} + 1 e^- \rightarrow Fe^{2+} \\
 \end{itemize}
 
 \begin{equation}
-SO_4^{2-} + 8 e^- + 10 H^+  \rightarrow H_2S + 4 H_2O
+SO_4^{2-} + 8 e^- + 10 H^+  \rightleftharpoons H_2S + 4 H_2O
 \end{equation}
 
 \begin{itemize}
@@ -2913,7 +3004,7 @@ SO_4^{2-} + 8 e^- + 10 H^+  \rightarrow H_2S + 4 H_2O
 \end{itemize}
 
 \begin{equation}
-CO_2 + 8 e^- + 8 H^+ \rightarrow CH_4 + 2 H_2O
+CO_2 + 8 e^- + 8 H^+ \rightleftharpoons CH_4 + 2 H_2O
 \end{equation}
 
 \begin{itemize}
@@ -2936,6 +3027,10 @@ CH_4 + 2\,H_2O & \rightleftharpoons & CO_2 + 8\,H^+ + 8\,e^-\\
 \hline\\
 CH_4 + 2\,O_2 & \to & CO_2 + 2\,H_2O
 \end{align}
+
+The electrons cancel out, and in this case the protons as well. So the
+combustion of methane, which is very simple at first glance, really
+involves a transfer of electrons, which the half-reactions reveal.
 
 \hypertarget{reduction}{\subsection{Reduction}\label{reduction}}
 
