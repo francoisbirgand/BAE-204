@@ -5,3 +5,4 @@
 *.Rmd
 *.ppt
 *.pptx
+.httr-oauth
